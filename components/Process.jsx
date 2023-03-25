@@ -1,8 +1,12 @@
 import React from "react";
 import Button from "./common/Button";
-import Link from 'next/link'
+import Link from "next/link";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 function Process() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <div id="process">
       <div className="p-side light-bg">
@@ -10,20 +14,36 @@ function Process() {
           <h1 className="font-semibold text-center heading-bg h-lg max-w-4xl mx-auto tracking-wide mt-5 mb-10">
             How it works
           </h1>
-          <div className="flex flex-col lg:flex-row lg:grid lg:grid-cols-5 items-start justify-center gap-5 max-w-5xl mx-auto mt-10 mb-5">
-            <div className="text-center w-full">
+          <div ref={ref} className="flex flex-col lg:flex-row lg:grid lg:grid-cols-5 items-start justify-center gap-5 max-w-5xl mx-auto mt-10 mb-5">
+            <motion.div
+              style={{
+                transform: isInView ? "none" : "translateY(20px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+              }}
+              className="text-center w-full"
+            >
               <p className="flex items-center justify-center p-3 border-2 border-bg w-10 h-10 rounded-full mx-auto">
                 1
               </p>
               <h1 className="heading-bg text-lg my-3 font-semibold">Request</h1>
               <p>Fill our talent request form and let’s know what you need.</p>
-            </div>
-            <img
+            </motion.div>
+            <motion.img
+              style={{
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+              }}
               className="hidden lg:block mt-5"
               src="/assets/arrow.svg"
               alt=""
             />
-            <div className="text-center w-full">
+            <motion.div
+              style={{
+                transform: isInView ? "none" : "translateY(20px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
+              }} className="text-center w-full">
               <p className="flex items-center justify-center p-3 border-2 border-bg w-10 h-10 rounded-full mx-auto">
                 2
               </p>
@@ -33,13 +53,22 @@ function Process() {
               <p>
                 We’ll match your needs with pre-screened talents in our network.
               </p>
-            </div>
-            <img
+            </motion.div>
+            <motion.img
+              style={{
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 2s",
+              }}
               className="hidden lg:block mt-5"
               src="/assets/arrow.svg"
               alt=""
             />
-            <div className="text-center w-full">
+            <motion.div
+              style={{
+                transform: isInView ? "none" : "translateY(20px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 2.5s",
+              }} className="text-center w-full">
               <p className="flex items-center justify-center p-3 border-2 border-bg w-10 h-10 rounded-full mx-auto">
                 3
               </p>
@@ -48,7 +77,7 @@ function Process() {
                 After agreements and payments, the talents are set up on your
                 systems to hit the ground running.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

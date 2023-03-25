@@ -25,7 +25,7 @@ function Growth() {
             style={{
               transform: isInView ? "none" : "translateY(20px)",
               opacity: isInView ? 1 : 0,
-              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1)",
             }}
             className="bg-white text-gray-700 rounded-xl px-5 xl:px-10 py-8 md:py-14"
           >
@@ -44,8 +44,8 @@ function Growth() {
             style={{
               transform: isInView ? "none" : "translateY(30px)",
               opacity: isInView ? 1 : 0,
-              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              transitionDelay: "1s",
+              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1)",
+              transitionDelay: "0.8s",
             }}
             className="bg-white text-gray-700 rounded-xl px-5 xl:px-10 py-8 md:py-14"
           >
@@ -64,8 +64,8 @@ function Growth() {
             style={{
               transform: isInView ? "none" : "translateY(40px)",
               opacity: isInView ? 1 : 0,
-              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              transitionDelay: "2s",
+              transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+              transitionDelay: "1.5s",
             }}
             className="bg-white text-gray-700 rounded-xl px-5 xl:px-10 py-8 md:py-14"
           >

@@ -20,7 +20,7 @@ function GoToTop() {
       }}
       whileHover={{
         y: 0,
-        transition: { duration: 0.8 },
+        transition: { duration: 0.5 },
       }}
       onClick={() => onTop()}
       className="fixed bottom-10 right-3 md:right-10 w-10 xl:w-14 h-10 xl:h-14 cursor-pointer bg-black shadow-lg rounded-md btn-bg text-white flex items-center justify-center z-10"

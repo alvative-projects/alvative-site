@@ -1,4 +1,7 @@
+import Link from "next/link";
 import React from "react";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 
 function Footer() {
   return (
@@ -23,9 +26,49 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center gap-6 pb-16">
-        <div><img src="/assets/fb.svg" alt="" /></div>
-        <div><img src="/assets/twitter.svg" alt="" /></div>
-        <div><img src="/assets/instagram.svg" alt="" /></div>
+        {/* <Link href=""><img src="/assets/fb.svg" alt="" /></Link> */}
+        <Link
+          target={"_blank"}
+          href="https://twitter.com/alvativehq"
+          className="cursor-pointer"
+        >
+          <motion.img
+            animate={{ y: [0, -5, 0] }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeIn",
+              // delay: index,
+            }}
+            whileHover={{
+              y: 0,
+              transition: { duration: 0.5 },
+            }}
+            src="/assets/twitter.svg"
+            alt=""
+          />
+        </Link>
+        <Link
+          target={"_blank"}
+          href="https://instagram.com/alvativehq"
+          className="cursor-pointer"
+        >
+          <motion.img
+            animate={{ y: [0, -5, 0] }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeIn",
+              delay: 0.5,
+            }}
+            whileHover={{
+              y: 0,
+              transition: { duration: 0.5 },
+            }}
+            src="/assets/instagram.svg"
+            alt=""
+          />
+        </Link>
       </div>
     </div>
   );
