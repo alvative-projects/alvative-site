@@ -62,7 +62,7 @@ function Process() {
               Apply to join our talent pipeline and get connected to
               opportunities.
             </p>
-            <Link href="https://forms.gle/iA4XZG9ARYDEZLQV6">
+            <Link target={"_blank"} href="https://forms.gle/FGH18mkpUR1EX3UJ9">
               <Button title={"Apply Here"} color={true} />
             </Link>
           </div>
@@ -73,7 +73,7 @@ function Process() {
             <p className="text-center md:text-left mb-5 max-w-sm">
               Let’s partner with you to place your people in attractive jobs
             </p>
-            <Link href="https://forms.gle/598bmDL3aWEMsb3d8">
+            <Link target={"_blank"} href="https://forms.gle/ojXsfCLrJea5gzQc8">
               <Button title={"Let's talk"} color={true} />
             </Link>
           </div>

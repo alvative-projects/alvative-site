@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./common/Button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -16,16 +17,17 @@ function Hero() {
                 animate="visible"
                 variants={{
                   hidden: {
-                    scale: .8,
-                    opacity: 0
+                    scale: 0.8,
+                    opacity: 0,
                   },
                   visible: {
                     scale: 1,
                     opacity: 1,
                     transition: {
                       delay: 1,
-                      duration: 1.5
-                    }}
+                      duration: 2,
+                    },
+                  },
                 }}
               >
                 <img className="fancy-line" src="/assets/line.svg" alt="" />
@@ -44,8 +46,12 @@ function Hero() {
             developers, or a temporary project team
           </p>
           <div className="flex items-center gap-3 mt-6">
-            <Button title={"Get Started"} color={true} />
-            <Button title={"Hire Talents"} color={false} />
+            <Link href="#growth">
+              <Button title={"Get Started"} color={true} />
+            </Link>
+            <Link target={"_blank"} href="https://forms.gle/qXteQ3QmmFsXcEfn7">
+              <Button title={"Hire Talents"} color={false} />
+            </Link>
           </div>
         </div>
       </div>

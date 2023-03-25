@@ -9,7 +9,7 @@ function Header() {
       {/* <header className="z-show fixed top-0 w-full bg-white p-side h-20 md:h-24 flex items-center justify-between border-b">
         <div>
           <Link href="">
-            <img src="/assets/logo.svg" alt="" className="w-40" />
+            <img src="/assets/logo.png" alt="" className="w-40" />
           </Link>
         </div>
         <div className="hidden lg:flex items-center">
@@ -31,7 +31,7 @@ function Header() {
       <header className="fixed top-0 w-full lg:static bg-white p-side h-20 z-show lg:h-44 flex items-center justify-between">
         <div>
           <Link href="">
-            <img src="/assets/logo.svg" alt="" className="w-40" />
+            <img src="/assets/logo.png" alt="" className="w-40" />
           </Link>
         </div>
         <div className="hidden lg:flex items-center">
