@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: ClashDisplayBold;
+  src: url("../public/fonts/ClashDisplay-Semibold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: AvertaDemo;
+  src: url("../public/fonts/AvertaDemo-Regular.otf");
+  font-weight: 400;
+}
+
+p {
+  color: #2B2C34;
+  line-height: 2;
+  font-family: "AvertaDemo";
+}
+
+h1 {
+  font-family: "ClashDisplayBold";
+  font-weight: 400 !important;
+}
+
+.hero-text {
+  line-height: 1.5 !important;
+  font-family: "ClashDisplayBold";
+}
+
+.close-nav {
+  transform: translateY(-150%);
+  transition: transform 0.5s linear;
+}
+
+.open-nav {
+  transform: translateY(0%);
+  transition: transform 0.5s linear;
+}
+
+.z-show {
+  z-index: 20;
+}
+
+.fancy-line {
+  position: absolute;
+  bottom: -15px;
+  right: 53%;
+  transform: translateX(50%);
+}
+
+.p-side {
+  padding: 0 6%;
+}
+
+.max {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  font-family: "AvertaDemo";
+}
+
+li, ul, ol {
+  list-style: none;
+  font-family: "AvertaDemo";
+}
+
+.btn-bg {
+  background-color: #253B80;
+}
+
+.h-max {
+  font-size: 56px;
+}
+
+.h-lg {
+  font-size: 40px;
+}
+
+.h-md {
+  font-size: 32px;
+}
+
+.border-bg {
+  border-color: #253B80;
+}
+
+.heading-bg {
+  color: #01396C;
+}
+
+.review-bg {
+  background-color: #262626;
+}
+
+.red-text {
+  color: #C63B3A;
+}
+
+.light-bg {
+  background-color: #ECF7FF;
+}
+
+.growth-bg {
+  background: linear-gradient(252.56deg, #3E60DA 1.88%, #053782 100%);
+  color: white;
+}
+
+.review-box {
+  min-height: 250px;
+}
+
+/* Swiper */
+.swiper {
+  position: static !important;
+  height: 400px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border: 1px solid #eee;
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+
+.swiper-button-prev::after {
+  content: "<";
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.swiper-button-next::after {
+  content: ">";
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+
+@media (max-width: 1279px) {
+  .swiper {
+    height: unset;
+  }
+
+  .h-max {
+    font-size: 40px;
+  }
+
+  .h-lg {
+    font-size: 30px;
+  }
+
+  .h-md {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  .partner-img {
+    max-width: 120px;
+  }
+
+  .fancy-line {
+    bottom: -10px;
+  }
+
+  .swiper {
+    height: unset;
+  }
+
+  .p-side {
+    padding: 0 5%;
+  }
+
+  .h-max {
+    font-size: 28px;
+  }
+
+  .h-lg {
+    font-size: 24px;
+  }
+
+  .h-md {
+    font-size: 20px;
+}
+}
