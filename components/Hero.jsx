@@ -36,7 +36,7 @@ function Hero() {
             your Growth
           </h1>
         </div>
-        <div className="mt-5 xl:mt-0 xl:max-w-md xl:justify-self-center">
+        <div className="md:mt-5 xl:mt-0 xl:max-w-md xl:justify-self-center">
           <p className="md:leading-8 md:text-lg">
             {/* We provide vetted technical talents to support your business with
             Technical Support, API Integrations, Project Development,

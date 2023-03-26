@@ -3,11 +3,11 @@ import React, { useState } from "react";
 function FaqItem({ question, answer }) {
   let [show, setShow] = useState(false);
   return (
-    <div
-      
-      className="border-b-2 border-bg mt-5 pb-5 md:pb-8 md:mt-8"
-    >
-      <div onClick={() => setShow(!show)} className="flex items-center cursor-pointer heading-bg">
+    <div className="border-b-2 border-bg mt-2 py-2 md:pb-8 md:mt-8">
+      <div
+        onClick={() => setShow(!show)}
+        className="flex items-center cursor-pointer heading-bg"
+      >
         <i
           className={`fa-solid cursor-pointer ${
             show ? "fa-minus" : "fa-plus"

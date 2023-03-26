@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 function Growth() {
   const ref = useRef(null);
@@ -33,12 +34,15 @@ function Growth() {
               Hire or Contract Talents
             </h1>
             <p className="mt-3 leading-loose">
-              We assign you pre-screened junior talents according to your needs,
-              whom we are also grooming and upskilling into intermediates.
+              We assign you smart, pre-screened junior talents according to your
+              business needs, whom we are also grooming and upskilling into
+              intermediates.
             </p>
-            <p className="heading-bg mt-4">
-              Request Talent <i className="fa-solid fa-arrow-right ml-1"></i>
-            </p>
+            <Link target={"_blank"} href="https://forms.gle/qXteQ3QmmFsXcEfn7">
+              <p className="heading-bg mt-4">
+                Request Talent <i className="fa-solid fa-arrow-right ml-1"></i>
+              </p>
+            </Link>
           </motion.div>
           <motion.div
             style={{
@@ -53,12 +57,15 @@ function Growth() {
               Outsource Projects
             </h1>
             <p className="mt-3 leading-loose">
-              A detailed wireframe kit made of comprehensive components to get
-              you started on you next website or landing page project.
+              We provide a team of dedicated developers that can help you to
+              build your projects which enables your team to keep being
+              efficient at what they do.
             </p>
-            <p className="heading-bg mt-4">
-              Get started now <i className="fa-solid fa-arrow-right ml-1"></i>
-            </p>
+            <Link target={"_blank"} href="https://forms.gle/ePGgJ6HR3KGoX4eN7">
+              <p className="heading-bg mt-4">
+                Get started now <i className="fa-solid fa-arrow-right ml-1"></i>
+              </p>
+            </Link>
           </motion.div>
           <motion.div
             style={{
@@ -77,9 +84,11 @@ function Growth() {
               Program where your community fellows join our Talent Pipeline and
               have access to our client offers.
             </p>
-            <p className="heading-bg mt-4">
-              Contact us <i className="fa-solid fa-arrow-right ml-1"></i>
-            </p>
+            <Link target={"_blank"} href="https://forms.gle/ojXsfCLrJea5gzQc8">
+              <p className="heading-bg mt-4">
+                Contact us <i className="fa-solid fa-arrow-right ml-1"></i>
+              </p>
+            </Link>
           </motion.div>
         </div>
       </div>
