@@ -39,7 +39,7 @@ function Growth() {
               intermediates.
             </p>
             <Link target={"_blank"} href="https://forms.gle/qXteQ3QmmFsXcEfn7">
-              <p className="heading-bg mt-4">
+              <p className="heading-bg mt-4 cursor-pointer">
                 Request Talent <i className="fa-solid fa-arrow-right ml-1"></i>
               </p>
             </Link>
@@ -62,7 +62,7 @@ function Growth() {
               efficient at what they do.
             </p>
             <Link target={"_blank"} href="https://forms.gle/ePGgJ6HR3KGoX4eN7">
-              <p className="heading-bg mt-4">
+              <p className="heading-bg mt-4 cursor-pointer">
                 Get started now <i className="fa-solid fa-arrow-right ml-1"></i>
               </p>
             </Link>
@@ -85,7 +85,7 @@ function Growth() {
               have access to our client offers.
             </p>
             <Link target={"_blank"} href="https://forms.gle/ojXsfCLrJea5gzQc8">
-              <p className="heading-bg mt-4">
+              <p className="heading-bg mt-4 cursor-pointer">
                 Contact us <i className="fa-solid fa-arrow-right ml-1"></i>
               </p>
             </Link>
