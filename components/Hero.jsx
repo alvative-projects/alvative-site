@@ -55,7 +55,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="mt-16 mb-20">
+      <div className="my-8 md:mt-16 md:mb-20">
         <img
           className="w-full hero-img object-cover"
           src="/assets/hero.png"

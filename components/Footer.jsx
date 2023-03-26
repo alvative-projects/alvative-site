@@ -14,15 +14,20 @@ function Footer() {
           Have any question or feedback, feel free to reach out to us. We are
           always available to help.
         </p>
+
         <div className="max-w-sm mt-10 grid grid-cols-2 mx-auto">
-          <div className="flex flex-col items-center">
-            <i className="fa-solid fa-phone text-white text-3xl mb-3"></i>
-            <p className="text-white">+2348064006070</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <i className="fa-solid fa-envelope text-white text-3xl mb-3"></i>
-            <p className="text-white">info@alvative.com</p>
-          </div>
+          <Link href="tel:8064006070">
+            <div className="flex flex-col items-center cursor-pointer">
+              <i className="fa-solid fa-phone text-white text-3xl mb-3"></i>
+              <p className="text-white">+2348064006070</p>
+            </div>
+          </Link>
+          <Link href="mailto:info@alvative.com">
+            <div className="flex flex-col items-center cursor-pointer">
+              <i className="fa-solid fa-envelope text-white text-3xl mb-3"></i>
+              <p className="text-white">info@alvative.com</p>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="flex justify-center gap-6 pb-16">

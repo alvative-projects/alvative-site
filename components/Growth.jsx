@@ -6,7 +6,7 @@ function Growth() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div id="growth" className="p-side growth-bg mt-20">
+    <div id="growth" className="p-side growth-bg mt-5 md:mt-20">
       <div className="py-10 md:py-24">
         <div className="text-center">
           <h1 className="font-semibold text-center h-lg max-w-4xl mx-auto tracking-wide my-5">
